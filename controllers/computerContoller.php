@@ -18,7 +18,7 @@
         $name = $_POST['name-pc'];
         $qty = $_POST['qty-pc'];
         $price = $_POST['price-pc'];
-        insertDatacomputer($image,$name,$qty,$price);
+        insertDatacomputer($name,$qty,$price,$image);
         header('location: index.php');
      }
     
