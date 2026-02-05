@@ -53,6 +53,17 @@
 
         header('location: index.php');
      }
+
+     if($action == 'delete'){
+      $id=$_GET['id'];
+      $oldData = getOnePc($id)->fetch_assoc();
+      $imageDelete = $oldData['prd_img'];
+      if(file_exists('./uploads/'.$imageDelete)){
+         unlink('./uploads/'.$imageDelete);
+      }
+      deletePc($id);
+       header('location: index.php');
+     }
    
     
 ?>

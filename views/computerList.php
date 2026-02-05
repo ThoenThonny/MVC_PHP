@@ -29,7 +29,7 @@
                 <td class=" pt-3"><?= $rows['pc_price'] ?>$</td>
                 <td class=" d-flex gap-3 align-items-center">
                     <a class=" bg-warning text-decoration-none py-2 px-3 rounded-1 text-black" href="index.php?action=getone&id=<?= $rows['pc_id'] ?>">Edit</a>
-                    <button  class=" btn btn-danger py-2">Delete</button>
+                    <a href="index.php?action=delete&id=<?= $rows['pc_id'] ?>"  class=" bg-danger text-decoration-none py-2 text-white px-3 rounded-1 text-black" >Delete</a>
                 </td>
             </tr>
 

@@ -20,6 +20,10 @@
         return $conn->query("UPDATE `computer_tbl` SET pc_name ='$brand',pc_qty = $qty, pc_price=$price,prd_img='$image' WHERE `pc_id`=$id");
     }
 
-    f
+    function deletePc($id){
+        global $conn;
+        return $conn->query("DELETE FROM `computer_tbl` WHERE `pc_id`=$id");
+    }
+    
     
 ?>
